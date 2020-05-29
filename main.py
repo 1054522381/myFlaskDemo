@@ -64,4 +64,6 @@ def door():
 
 
 if __name__ == '__main__':
+    # 解决中文乱码的问题，将json数据内的中文正常显示
+    app.config['JSON_AS_ASCII'] = False
     app.run()
